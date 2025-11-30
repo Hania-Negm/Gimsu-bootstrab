@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gimsu Project</title>
         <link rel="icon" href="./imgs/logo.png">
-        <link rel="stylesheet" href="./node_modules\bootstrap\dist\css\bootstrap.min.css">
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
@@ -106,6 +106,53 @@
                     </div>
             </header>
        </div>
+
+       <section class="hero-section my-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-6 col-md-12 d-flex flex-column gap-5">
+                        <h1>
+                            Transform Your <b>Body</b>  <br>
+                            Transform Your <b>Life</b>
+                        </h1>
+
+                        <p>Embark on a Journey to Wellness: Elevate Your Fitness Experience with [Gym Name], Your Ultimate Destination for Unleashing Your Full Potential and Embracing a Vibrant, Active Lifestyle.</p>
+
+                        <div class="d-flex align-items-center gap-3">
+                            <button class="py-2 px-3 d-flex justify-content-center align-items-center">Get Started</button>
+                            <button class="d-flex align-items-center justify-content-center gap-2">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill="#28282C"/>
+                                    <path d="M21.4887 14.4554C21.7689 14.6044 22.0033 14.8268 22.1667 15.0989C22.3301 15.3709 22.4165 15.6822 22.4165 15.9995C22.4165 16.3169 22.3301 16.6282 22.1667 16.9002C22.0033 17.1722 21.7689 17.3946 21.4887 17.5436L14.0151 21.6077C12.8117 22.2628 11.3335 21.4111 11.3335 20.0642V11.9354C11.3335 10.5879 12.8117 9.73686 14.0151 10.3908L21.4887 14.4554Z" fill="white"/>
+                                </svg>
+                                Watch Video
+                            </button>
+                        </div>
+
+                        <ul class="d-flex align-items-center gap-3">
+                            <li class="d-flex flex-column justify-content-center">
+                                <h4>103+</h4>
+                                <p>Expert Trainers</p>
+                            </li>
+
+                            <li class="d-flex flex-column justify-content-center">
+                                <h4>680+</h4>
+                                <p>Member Joined</p>
+                            </li>
+
+                            <li class="d-flex flex-column justify-content-center">
+                                <h4>140+</h4>
+                                <p>Fitness Programs</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <img src="./imgs/hero-img.png" alt="" class="d-block img-fluid">
+                    </div>
+                </div>
+            </div>
+       </section>
 
        <section class="plans-section my-5">
             <div class="container">
@@ -208,8 +255,152 @@
        </section>
 
         <footer class="py-5 px-5">
-            <div class="container">
-                <div class="row justify-content-between align-items-center gap-5 align-items-md-center">
+            <div class="container pb-3 upper-footer">
+                 <div class="row d-md-none d-none d-lg-flex justify-content-center align-items-center gap-5 align-items-md-center">
+                   <div class="col-auto d-flex flex-column gap-3">
+                        <h5>Information</h5>
+                        <ul class="d-flex flex-column gap-3">
+                            <li>
+                                <a href="">FAQ</a>
+                            </li>
+
+                            <li>
+                                <a href="">Blog</a>
+                            </li>
+
+                            <li>
+                                <a href="">Suuport</a>
+                            </li>
+                        </ul>
+                   </div>
+
+                   <div class="col-auto d-flex flex-column gap-3">
+                        <h5>Company</h5>
+                        <ul class="d-flex flex-column gap-3">
+                            <li>
+                                <a href="">About Us</a>
+                            </li>
+
+                            <li>
+                                <a href="">Carrers</a>
+                            </li>
+
+                            <li>
+                                <a href="">Contact Us</a>
+                            </li>
+
+                            <li>
+                                <a href="">Lift Media</a>
+                            </li>
+                        </ul>
+                   </div>
+
+                   <div class="col-auto d-flex flex-column gap-3">
+                        <h5>Learn More</h5>
+                        <ul class="d-flex flex-column gap-3">
+                            <li>
+                                <a href="">About Lift</a>
+                            </li>
+
+                            <li>
+                                <a href="">Environment</a>
+                            </li>
+
+                            <li>
+                                <a href="">Jobs</a>
+                            </li>
+                        </ul>
+                   </div>
+                </div>
+
+                <div class="accordion d-lg-none d-md-block d-sm-block" id="accordionExample">
+                    <div class="accordion-item">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Information
+                            </button>
+                        </h5>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body d-flex flex-column gap-2">
+                                <a href="">FAQ</a>
+                                <a href="">Blog</a>
+                                <a href="">Support</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Company
+                            </button>
+                        </h5>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body d-flex flex-column gap-2">
+                                <a href="">About Us</a>
+                                <a href="">Carrers</a>
+                                <a href="">Contact Us</a>
+                                <a href="">Lift Media</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Learn More
+                            </button>
+                        </h5>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                             <div class="accordion-body d-flex flex-column gap-2">
+                                <a href="">About Lift</a>
+                                <a href="">Environment</a>
+                                <a href="">Jobs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container lower-footer py-3">
+                <div class="accordion d-lg-none d-md-block d-sm-block" id="accordionExample">
+                    <div class="accordion-item">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Conditions
+                            </button>
+                        </h5>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body d-flex flex-column gap-2">
+                                <a href="">Terms</a>
+                                <a href="">Privacy</a>
+                                <a href="">Cookies</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Social Media
+                            </button>
+                        </h5>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body d-flex flex-column gap-2">
+                                <a href="" class="d-flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M196.3 512L103.4 512L103.4 212.9L196.3 212.9L196.3 512zM149.8 172.1C120.1 172.1 96 147.5 96 117.8C96 103.5 101.7 89.9 111.8 79.8C121.9 69.7 135.6 64 149.8 64C164 64 177.7 69.7 187.8 79.8C197.9 89.9 203.6 103.6 203.6 117.8C203.6 147.5 179.5 172.1 149.8 172.1zM543.9 512L451.2 512L451.2 366.4C451.2 331.7 450.5 287.2 402.9 287.2C354.6 287.2 347.2 324.9 347.2 363.9L347.2 512L254.4 512L254.4 212.9L343.5 212.9L343.5 253.7L344.8 253.7C357.2 230.2 387.5 205.4 432.7 205.4C526.7 205.4 544 267.3 544 347.7L544 512L543.9 512z"/></svg>
+                                </a>
+                                
+                                <a href="" class="d-flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M240 363.3L240 576L356 576L356 363.3L442.5 363.3L460.5 265.5L356 265.5L356 230.9C356 179.2 376.3 159.4 428.7 159.4C445 159.4 458.1 159.8 465.7 160.6L465.7 71.9C451.4 68 416.4 64 396.2 64C289.3 64 240 114.5 240 223.4L240 265.5L174 265.5L174 363.3L240 363.3z"/></svg>
+                                </a>
+
+                                <a href="" class="d-flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M523.4 215.7C523.7 220.2 523.7 224.8 523.7 229.3C523.7 368 418.1 527.9 225.1 527.9C165.6 527.9 110.4 510.7 64 480.8C72.4 481.8 80.6 482.1 89.3 482.1C138.4 482.1 183.5 465.5 219.6 437.3C173.5 436.3 134.8 406.1 121.5 364.5C128 365.5 134.5 366.1 141.3 366.1C150.7 366.1 160.1 364.8 168.9 362.5C120.8 352.8 84.8 310.5 84.8 259.5L84.8 258.2C98.8 266 115 270.9 132.2 271.5C103.9 252.7 85.4 220.5 85.4 184.1C85.4 164.6 90.6 146.7 99.7 131.1C151.4 194.8 229 236.4 316.1 240.9C314.5 233.1 313.5 225 313.5 216.9C313.5 159.1 360.3 112 418.4 112C448.6 112 475.9 124.7 495.1 145.1C518.8 140.6 541.6 131.8 561.7 119.8C553.9 144.2 537.3 164.6 515.6 177.6C536.7 175.3 557.2 169.5 576 161.4C561.7 182.2 543.8 200.7 523.4 215.7z"/></svg>                            
+                                </a>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row d-md-none d-none d-lg-flex  justify-content-between align-items-center gap-5 align-items-md-center">
                     <div class="col-auto">
                         <a href="">
                             <img src="./imgs/logo.png" alt="">
@@ -278,7 +469,7 @@
             </div>
         </footer>
 
-        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="./js/app.js"></script>
     </body>
 </html>

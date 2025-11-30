@@ -28,6 +28,8 @@ ul{
     --grey-secondary:#676868;
     --primary:#D7FB00;
     --black:#000;
+    --bs-body-bg: transparent;
+    --bs-border-width:none;
 }
 
 body{
@@ -121,9 +123,65 @@ body{
 }
 /*#endregion*/
 
+/* Hero Section */
+/*#region*/
+.hero-section h1{
+    font-size: 56.8px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.hero-section p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--grey-secondary);
+}
+
+.hero-section button:first-child{
+    background-color: var(--primary);
+    border-radius: 50px;
+    border: 1px solid var(--primary);
+    transition: all linear 0.3s;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--body-bk);
+    filter: blur(54.9);
+}
+
+.hero-section button:last-child{
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--white);
+    background: none;
+    border: none;
+}
+
+.hero-section li{
+    border-right: 1px solid var(--white);
+    padding-right: 10px;
+}
+
+.hero-section li:last-child{
+    border-right: none;
+}
+
+.hero-section h4{
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--white);
+}
+
+.hero-section img{
+    max-width: 100%;
+    height: auto;
+}
+/*#endregion*/
+
 /* Plans Section */
 /*#region*/
-.plans-section{
+.plans-section , .hero-section{
     background-color: var(--section-bk);
 }
 
@@ -144,7 +202,6 @@ body{
   background: transparent;
   border: 1px solid var(--primary);
   border-radius: 60px;
-  padding: 5px;
 }
 
 .toggle-btn {
@@ -271,7 +328,7 @@ footer{
     outline: none;
 }
 
-.social-media-dropdown a svg{
+.social-media-dropdown a svg , .lower-footer a svg{
     padding: 6px;
     fill: var(--white);
     width: 35px;
@@ -282,5 +339,34 @@ footer{
 
 .btn-secondary {
     background-color: transparent;
+}
+
+.lower-footer{
+    border-top: 1px solid var(--white);
+}
+
+footer h5 , .upper-footer a , .lower-footer a{
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--white);
+}
+
+.upper-footer a , .lower-footer a{
+    text-decoration: none;
+}
+
+.accordion{
+    border: none;
+}
+
+.accordion-button{
+    color: var(--white);
+}
+
+.accordion-button:not(.collapsed){
+    color: var(--white);
+    background-color: transparent;
+    border: var(--grey-secondary);
 }
 /*#endregion*/
