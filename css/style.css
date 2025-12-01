@@ -34,7 +34,6 @@ ul{
 
 body{
     background-color: var(--body-bk);
-    overflow: hidden;
 }
 
 /* Header */
