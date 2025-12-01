@@ -34,6 +34,7 @@ ul{
 
 body{
     background-color: var(--body-bk);
+    overflow: hidden;
 }
 
 /* Header */
@@ -239,8 +240,6 @@ body{
     height: unset;
 }
 
-
-/* Avatars overlapped */
 .avatar-links {
     display: flex;
     align-items: center;
@@ -255,7 +254,6 @@ body{
     margin-left: -14px; 
 }
 
-/* Add (+) circle */
 .add-avatar {
     background: #5865F2; 
     display: flex;
@@ -276,6 +274,16 @@ body{
     margin-top: 20px;
 }
 
+@media screen and (max-width: 631px) {
+    .carousel-control-next{
+        top: 11%;
+        right: 16px;
+    }
+
+    .carousel-control-prev {
+        display: none;
+    }
+}
 /*#endregion*/
 
 /* Plans Section */
