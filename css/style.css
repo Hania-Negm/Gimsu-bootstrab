@@ -179,19 +179,118 @@ body{
 }
 /*#endregion*/
 
+/* Choose Section */
+/*#region*/
+.div-svg{
+    background-color: var(--grey-secondary);
+    border: 1px solid var(--grey-secondary);
+    border-radius: 100%;
+}
+
+.choose-section h4{
+    color: var(--white);
+}
+
+.choose-section .row{
+    border-radius: 32px;
+    background-color: #171717;
+}
+/*#endregion*/
+
+/* Clients Section */
+/*#region*/
+.client-section h6 , .client-section p{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--white);
+    margin: 0
+}
+
+.carousel-control-next {
+    right: -36px;
+}
+
+.carousel-control-prev {
+    left: -36px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    top: 50%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: 6px;
+    color: #fff;
+    text-align: center;
+    background: var(--primary);
+    border: 0;
+    opacity:unset;
+    transition: opacity .15s ease;
+    border-radius: 100%;
+    transform: translateY(-50%);
+    bottom: unset;
+}
+
+.carousel-control-next-icon  , .carousel-control-prev-icon{
+    background-image: none;
+    width: unset;
+    height: unset;
+}
+
+
+/* Avatars overlapped */
+.avatar-links {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #000;
+    margin-left: -14px; 
+}
+
+/* Add (+) circle */
+.add-avatar {
+    background: #5865F2; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.rate-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.avatar-info {
+    margin-top: 20px;
+}
+
+/*#endregion*/
+
 /* Plans Section */
 /*#region*/
-.plans-section , .hero-section{
+.plans-section , .hero-section , .choose-section , .client-section {
     background-color: var(--section-bk);
 }
 
-.plans-section h2{
+.plans-section h2 , .choose-section  h2 , .client-section h2{
     font-weight: 500;
     font-size: 36px;
     color: var(--white);
 }
 
-.plans-section p , .card h5{
+.plans-section p , .card h5 , .choose-section  p{
     color: var(--grey-secondary);
     font-size: 16px;
     font-weight: 500;
@@ -220,7 +319,7 @@ body{
   color: var(--section-bk);
 }
 
-.card {
+.card , .carousel-inner {
     background: linear-gradient(180deg, rgba(46,51,90,0) 0%, rgba(28,27,51,0.2) 100%);
     border-radius: 32px;
     border: 1px solid #FFFFFF26;
